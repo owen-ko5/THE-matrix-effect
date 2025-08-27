@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import MatrixRain from "./MatrixRain";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* Emoji Rain 🌈😂🔥💀 */}
+      <MatrixRain mode="emoji" />
+
+      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-green-400">
+        <h1 className="text-4xl font-mono drop-shadow-[0_0_10px_#0f0]">
+          Welcome to the Matrix
+        </h1>
+      </div>
     </div>
   );
 }
